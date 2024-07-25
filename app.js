@@ -10,7 +10,7 @@ searchBtn.addEventListener('click',function(){
     movieListDiv.innerHTML = '';
     errorMessage.style.display = 'none';
 
-    fetch(`http://www.omdbapi.com/?apikey=${API_key}&s=${title}`)
+    fetch(`https://www.omdbapi.com/?apikey=${API_key}&s=${title}`)
     .then(response => response.json())
     .then(data => {
 
